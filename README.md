@@ -2,33 +2,25 @@
 
 This project is focused on detecting fraudulent financial transactions and performing risk analysis using machine learning models. The system is designed to identify suspicious activity patterns, improve fraud detection accuracy, and support risk-aware decision-making in financial datasets.
 
-## Project Overview
+## Important
+The dataset is too large to be stored directly in this repository. You can download it here:
+[Download Dataset from Google Drive]([https://drive.google.com/your-link-here](https://drive.google.com/drive/folders/13DrCohjZgF-wpJ435WHaykuZkIIaRy4b?usp=drive_link))
 
-Financial fraud detection is a critical application of machine learning because fraudulent transactions are often rare, complex, and constantly evolving. In this project, multiple machine learning models are explored to build an effective fraud detection pipeline.
+## How to Run
+
+1. Clone this repository to your local system.
+2. Make sure all required Python libraries are installed.
+3. Download or place the dataset CSV file on your computer.
+4. Open the Python file and update the dataset path inside `pd.read_csv()` with the location of the CSV file on your system.
+5. Put your own file path inside the double quotes.
+
+## Project Overview
 
 The development approach follows a progressive modeling strategy:
 - **Linear Regression** was used as the baseline model to understand the dataset, workflow, and initial behavior of the features.
 - **Random Forest** was then used as the primary model because of its ability to capture non-linear relationships and handle structured data effectively.
 - **XGBoost** is planned as the next improvement step to further boost prediction performance and strengthen the risk analysis component.
 - **SHAP** we plan on using shap to go above and beyond and add explainability as to how the transactions were flagged.
-
-## Objectives
-
-- Detect fraudulent financial transactions
-- Analyze transaction risk levels
-- Compare machine learning models for fraud detection
-- Build a scalable and improvable fraud analysis pipeline
-
-## Models Used
-
-### 1. Linear Regression
-Used as a baseline model to get an initial understanding of the data and establish a starting point for model comparison.
-
-### 2. Random Forest
-Used as the main model for prediction due to its robustness, better handling of feature interactions, and improved performance over the baseline approach.
-
-### 3. XGBoost
-Planned for future implementation to improve accuracy, efficiency, and predictive strength, especially for rich and complex dataset.
 
 ## Workflow
 

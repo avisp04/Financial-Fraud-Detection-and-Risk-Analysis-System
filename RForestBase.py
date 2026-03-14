@@ -4,6 +4,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
 
+#Load Dataset with target 
+#Base Random Forest model to work with Baseline_dataset
 data = pd.read_csv("D:/Coding/Python/fraud_detection/IEEE_dataset.csv")
 
 print("data size:", data.shape)

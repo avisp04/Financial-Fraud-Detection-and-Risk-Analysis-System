@@ -1,3 +1,4 @@
+#Uncomment the Feature Engineering and data drop columns if using Baseline_dataset(extended.csv) since features are tailor made for that file
 import pandas as pd
 from imblearn.over_sampling import SMOTE
 from sklearn.model_selection import train_test_split
@@ -5,23 +6,27 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
 
-data = pd.read_csv("D:/Coding/Python/fraud_detection/cv_xgb_model_submission.csv")
+#Change "" to your target to read .CSV file
+data = pd.read_csv("your/file/path/here.csv")
 
+"""
 #Feature engineering
-#data["TransactionHour"] = (data["TransactionDT"] % 86400) // 3600
-#data["DistanceRatio"] = data["dist2"] / (data["dist1"] + 1)
-#data["HighAmount"] = (data["TransactionAmt"] > data["TransactionAmt"].median()).astype(int)
-#data["CardTransactionCount"] = data.groupby("card1")["TransactionID"].transform("count")
-#data["CardAmountMean"] = data.groupby("card1")["TransactionAmt"].transform("mean")
+data["TransactionHour"] = (data["TransactionDT"] % 86400) // 3600
+data["DistanceRatio"] = data["dist2"] / (data["dist1"] + 1)
+data["HighAmount"] = (data["TransactionAmt"] > data["TransactionAmt"].median()).astype(int)
+data["CardTransactionCount"] = data.groupby("card1")["TransactionID"].transform("count")
+data["CardAmountMean"] = data.groupby("card1")["TransactionAmt"].transform("mean")
 
-#data = data.drop(columns=[
-#    "ProductCD",
-#    "card4",
-#    "P_emaildomain",
-#    "R_emaildomain",
-#    "DeviceType",
-#    "DeviceInfo"
-#])
+data = data.drop(columns=[
+    "ProductCD",
+    "card4",
+    "P_emaildomain",
+    "R_emaildomain",
+    "DeviceType",
+    "DeviceInfo"
+])
+"""
+
 print("data size:", data.shape)
 
 #Separate features and target

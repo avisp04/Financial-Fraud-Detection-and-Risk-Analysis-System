@@ -7,8 +7,9 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report
 
 
-#Load dataset
-data = pd.read_csv("D:/Coding/Python/fraud_detection/IEEE_dataset.csv")
+#Load dataset with your target
+#Base Logistic Regresssion Model is for Baseline_dataset.csv
+data = pd.read_csv("your/file/path/here.csv")
 
 print("dataset shape:", data.shape)
 print(data.head())

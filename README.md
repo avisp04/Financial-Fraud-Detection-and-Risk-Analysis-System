@@ -4,7 +4,7 @@ This project is focused on detecting fraudulent financial transactions and perfo
 
 ## Important
 The dataset is too large to be stored directly in this repository. You can download it here:
-[Download Dataset from Google Drive]([https://drive.google.com/your-link-here](https://drive.google.com/drive/folders/13DrCohjZgF-wpJ435WHaykuZkIIaRy4b?usp=drive_link))
+[Download Dataset from Google Drive](https://drive.google.com/drive/folders/13DrCohjZgF-wpJ435WHaykuZkIIaRy4b?usp=drive_link)
 
 ## How to Run
 

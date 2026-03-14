@@ -6,7 +6,7 @@ from sklearn.metrics import classification_report
 
 #Load Dataset with target 
 #Base Random Forest model to work with Baseline_dataset
-data = pd.read_csv("D:/Coding/Python/fraud_detection/IEEE_dataset.csv")
+data = pd.read_csv("your/file/path/here.csv")
 
 print("data size:", data.shape)
 
